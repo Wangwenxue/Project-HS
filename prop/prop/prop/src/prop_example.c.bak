@@ -1,0 +1,132 @@
+/****************************************************************************
+ *   $Id:: mbist_main.c                                                      $
+ *   Project: QUINTIC QN9020 MBIST test function
+ *
+ *   Description:
+ *     This file contains QN9020 SRAM BIST function.
+ *
+ *   By Derek @2012.08.15
+ ****************************************************************************
+ * Software that is described herein is for illustrative purposes only
+ * which provides customers with programming information regarding the
+ * products. This software is supplied "AS IS" without any warranties.
+ * QUINTIC Semiconductors assumes no responsibility or liability for the
+ * use of the software, conveys no license or title under any patent,
+ * copyright, or mask work right to the product. QUINTIC Semiconductors
+ * reserves the right to make changes in the software without
+ * notification. QUINTIC Semiconductors also make no representation or
+ * warranty that such application will be suitable for the specified
+ * use without further testing or modification.
+****************************************************************************/
+
+
+#include "uart.h"
+#include "proprietary.h"
+#include "system.h"
+
+#include "intc.h"
+
+#define LED1_PIN        GPIO_P05
+#define LED2_PIN        GPIO_P04
+#define LED3_PIN        GPIO_P03
+#define LED4_PIN        GPIO_P02
+#define LED5_PIN        GPIO_P01
+
+#define LED_PIN_ALL     ((LED1_PIN) | \
+                         (LED2_PIN) | \
+                         (LED3_PIN) | \
+                         (LED4_PIN) | \
+                         (LED5_PIN) )
+
+#define LED_ON(_PIN_)       gpio_write_pin(_PIN_, GPIO_LOW);
+#define LED_OFF(_PIN_)      gpio_write_pin(_PIN_, GPIO_HIGH);
+
+
+/**
+ * Proprietary packet
+ * +----------+----------------+-----------+--------+
+ * | Preamble | Access Address |  Payload  |  CRC   |
+ * +----------+----------------+-----------+--------+
+ * |  2Bytes  |     5Bytes     |  12Bytes  | 16Bits |
+ * +----------+----------------+-----------+--------+
+ */
+#define PROP_TEST_TX            1
+
+
+#define TRX_CHANNEL             10
+
+#define PROP_PREAMBLE_LEN       2
+#define PROP_AA_LEN             5
+#define PROP_PAYLOAD_LEN        12
+#define PROP_CRC_LEN            2
+
+
+#if PROP_TEST_TX == 1
+    #define PROP_TEST_RX        0
+#else
+    #define PROP_TEST_RX        1
+#endif
+
+
+uint8_t tx_buf[PROP_PREAMBLE_LEN + PROP_AA_LEN + PROP_PAYLOAD_LEN];
+uint8_t rx_buf[PROP_PAYLOAD_LEN + PROP_CRC_LEN];
+
+int sc_index = 0;
+int main (void)
+{
+    uint8_t AA[5] = {0xd6, 0xbe, 0x89, 0x8e, 0x7f};    
+    SystemInit();
+    
+    /* Turn all LED on */
+    gpio_init(NULL);
+    gpio_set_direction(LED4_PIN, GPIO_OUTPUT);
+    gpio_set_direction(LED5_PIN, GPIO_OUTPUT);
+    
+    uart_init(QN_UART0, __USART_CLK, UART_115200);
+    uart_tx_enable(QN_UART0, MASK_ENABLE);
+    uart_rx_enable(QN_UART0, MASK_ENABLE);
+    
+    prop_init(PROP_PREAMBLE_NUM_2BYTE, PROP_CRC_NUM_16BITS, PROP_DATA_RATE_250K);
+    
+#if PROP_TEST_TX == 1
+    printf("***********Welcome to Prop-Tx test*********** \r\n");
+#else
+    printf("***********Welcome to Prop-Rx test*********** \r\n");
+#endif
+    
+    while(1)
+    {        
+#if PROP_TEST_TX == 1
+        prop_mode_tx(TRX_CHANNEL, AA, PROP_AA_NUM_5BYTES, (uint8_t *)"Prop_Mode_Test\r\n", 12);
+        
+        gpio_toggle_pin(LED4_PIN);
+        
+        delay(500000);
+        printf("sending data: %d\r\n", sc_index++);	   			
+#else
+        memset(rx_buf, 0, (PROP_PAYLOAD_LEN + PROP_CRC_LEN));
+        prop_mode_rx(TRX_CHANNEL, AA, PROP_AA_NUM_5BYTES, rx_buf, (PROP_PAYLOAD_LEN + PROP_CRC_LEN));
+        
+        gpio_toggle_pin(LED5_PIN);
+        
+        // CRC check
+        if(dp_dp_GetReg(0x3c) & DP_MASK_CRC_ERROR)
+        {
+            printf("==>CRC error\r\n");
+        }
+        else
+        {
+            if(memcmp(rx_buf, "Prop_Mode_Test\r\n", PROP_PAYLOAD_LEN))
+            {
+                printf("==>Data error\r\n");
+            }
+            printf("%d: %s",sc_index++, rx_buf);
+        }
+        //   printf("receive data: %d\r\n", sc_index++);  
+        
+#endif  // End of PROP_TEST_TX */
+    }
+}
+
+
+

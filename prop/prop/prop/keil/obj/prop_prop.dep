@@ -1,0 +1,284 @@
+Dependencies for Project 'prop', Target 'prop': (DO NOT MODIFY !)
+F (..\..\src\startup\keil\startup.s)(0x575749FB)(--cpu Cortex-M0 -g --16 --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020--pd "__UVISION_VERSION SETA 515"--list .\startup.lst --xref -o .\obj\startup.o --depend .\obj\startup.d)
+F (..\src\system.c)(0x575749FB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\system.o --omf_browse .\obj\system.crf --depend .\obj\system.d)
+I (..\src\system.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (..\..\src\driver\syscon.h)(0x575749FB)
+I (..\..\src\driver\uart.h)(0x575749FB)
+I (..\..\src\driver\sleep.h)(0x575749FB)
+I (..\..\src\driver\gpio.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (..\..\src\driver\spi.h)(0x575749FB)
+I (..\..\src\driver\timer.h)(0x575749FB)
+I (..\..\src\driver\pwm.h)(0x575749FB)
+I (..\..\src\driver\dma.h)(0x575749FB)
+I (..\..\src\driver\serialflash.h)(0x575749FB)
+I (..\..\src\driver\adc.h)(0x575749FB)
+I (..\..\src\driver\analog.h)(0x575749FB)
+I (..\..\src\lib\calibration.h)(0x575749FB)
+I (..\..\src\lib\lib.h)(0x575749FB)
+I (..\..\src\fw\fw_func_addr.h)(0x575749FB)
+F (..\..\src\driver\adc.c)(0x575749FB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\adc.o --omf_browse .\obj\adc.crf --depend .\obj\adc.d)
+I (..\..\src\driver\adc.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (..\..\src\driver\syscon.h)(0x575749FB)
+I (..\..\src\driver\sleep.h)(0x575749FB)
+I (..\..\src\driver\gpio.h)(0x575749FB)
+I (..\..\src\fw\nvds.h)(0x575749FB)
+I (..\..\src\fw\fw_func_addr.h)(0x575749FB)
+F (..\..\src\driver\analog.c)(0x575749FB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\analog.o --omf_browse .\obj\analog.crf --depend .\obj\analog.d)
+I (..\..\src\driver\analog.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (..\..\src\driver\gpio.h)(0x575749FB)
+I (..\..\src\fw\nvds.h)(0x575749FB)
+I (..\..\src\fw\fw_func_addr.h)(0x575749FB)
+F (..\..\src\driver\dma.c)(0x5795CEA8)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\dma.o --omf_browse .\obj\dma.crf --depend .\obj\dma.d)
+I (..\..\src\driver\dma.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (..\..\src\driver\syscon.h)(0x575749FB)
+I (..\..\src\driver\uart.h)(0x575749FB)
+I (..\..\src\driver\sleep.h)(0x575749FB)
+I (..\..\src\driver\gpio.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+F (..\..\src\driver\gpio.c)(0x575749FB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\gpio.o --omf_browse .\obj\gpio.crf --depend .\obj\gpio.d)
+I (..\..\src\driver\gpio.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (..\..\src\driver\sleep.h)(0x575749FB)
+I (..\..\src\driver\syscon.h)(0x575749FB)
+F (..\..\src\driver\i2c.c)(0x575749FB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\i2c.o --omf_browse .\obj\i2c.crf --depend .\obj\i2c.d)
+I (..\..\src\driver\i2c.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (..\..\src\driver\syscon.h)(0x575749FB)
+F (..\..\src\driver\pwm.c)(0x575749FB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\pwm.o --omf_browse .\obj\pwm.crf --depend .\obj\pwm.d)
+I (..\..\src\driver\pwm.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (..\..\src\driver\timer.h)(0x575749FB)
+I (..\..\src\driver\sleep.h)(0x575749FB)
+I (..\..\src\driver\syscon.h)(0x575749FB)
+I (..\..\src\driver\gpio.h)(0x575749FB)
+F (..\..\src\driver\rtc.c)(0x575749FB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\rtc.o --omf_browse .\obj\rtc.crf --depend .\obj\rtc.d)
+I (..\..\src\driver\rtc.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\time.h)(0x54C245B8)
+F (..\..\src\driver\serialflash.c)(0x575749FB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\serialflash.o --omf_browse .\obj\serialflash.crf --depend .\obj\serialflash.d)
+I (..\..\src\driver\serialflash.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (..\..\src\driver\syscon.h)(0x575749FB)
+F (..\..\src\driver\sleep.c)(0x575749FB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\sleep.o --omf_browse .\obj\sleep.crf --depend .\obj\sleep.d)
+I (..\..\src\driver\sleep.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (..\..\src\driver\syscon.h)(0x575749FB)
+I (..\..\src\driver\gpio.h)(0x575749FB)
+I (..\..\src\driver\intc.h)(0x575749FB)
+I (..\..\src\lib\lib.h)(0x575749FB)
+I (..\..\src\fw\fw_func_addr.h)(0x575749FB)
+F (..\..\src\driver\spi.c)(0x575749FB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\spi.o --omf_browse .\obj\spi.crf --depend .\obj\spi.d)
+I (..\..\src\driver\spi.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (..\..\src\driver\syscon.h)(0x575749FB)
+I (..\..\src\driver\sleep.h)(0x575749FB)
+I (..\..\src\driver\gpio.h)(0x575749FB)
+F (..\..\src\driver\syscon.c)(0x575749FB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\syscon.o --omf_browse .\obj\syscon.crf --depend .\obj\syscon.d)
+I (..\..\src\driver\syscon.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (..\..\src\driver\timer.h)(0x575749FB)
+I (..\..\src\driver\sleep.h)(0x575749FB)
+I (..\..\src\driver\gpio.h)(0x575749FB)
+I (..\..\src\driver\rtc.h)(0x575749FB)
+F (..\..\src\driver\timer.c)(0x575749FB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\timer.o --omf_browse .\obj\timer.crf --depend .\obj\timer.d)
+I (..\..\src\driver\timer.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (..\..\src\driver\sleep.h)(0x575749FB)
+I (..\..\src\driver\syscon.h)(0x575749FB)
+I (..\..\src\driver\gpio.h)(0x575749FB)
+F (..\..\src\driver\uart.c)(0x575749FB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\uart.o --omf_browse .\obj\uart.crf --depend .\obj\uart.d)
+I (..\..\src\driver\uart.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (..\..\src\driver\syscon.h)(0x575749FB)
+I (..\..\src\driver\sleep.h)(0x575749FB)
+I (..\..\src\driver\gpio.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+F (..\..\src\driver\wdt.c)(0x575749FB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\wdt.o --omf_browse .\obj\wdt.crf --depend .\obj\wdt.d)
+I (..\..\src\driver\wdt.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+F (..\..\src\lib\keil\qn902xb2_lib_lite.lib)(0x575749FB)()
+F (..\..\src\retarget\retarget.c)(0x575749FB)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\retarget.o --omf_browse .\obj\retarget.crf --depend .\obj\retarget.d)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\time.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\rt_misc.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C245B8)
+F (..\src\prop_example.c)(0x57A1AE7D)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\prop_example.o --omf_browse .\obj\prop_example.crf --depend .\obj\prop_example.d)
+I (..\..\src\driver\uart.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (..\..\src\driver\syscon.h)(0x575749FB)
+I (..\..\src\driver\sleep.h)(0x575749FB)
+I (..\..\src\driver\gpio.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (..\src\proprietary.h)(0x57A00BDC)
+I (..\src\system.h)(0x575749FB)
+I (..\..\src\driver\intc.h)(0x575749FB)
+F (..\src\proprietary.c)(0x57A03CC0)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\proprietary.o --omf_browse .\obj\proprietary.crf --depend .\obj\proprietary.d)
+I (..\src\proprietary.h)(0x57A00BDC)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+I (..\..\src\driver\dma.h)(0x575749FB)
+I (..\..\src\driver\syscon.h)(0x575749FB)
+I (..\..\src\lib\qnrf.h)(0x57A03C30)
+I (..\..\src\fw\fw_func_addr.h)(0x575749FB)
+F (..\src\crc.c)(0x57A035DF)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\crc.o --omf_browse .\obj\crc.crf --depend .\obj\crc.d)
+I (..\..\src\driver\intc.h)(0x575749FB)
+I (..\src\driver_config.h)(0x575749FB)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\src\cmsis\driver_QN9020.h)(0x575749FB)
+I (..\..\src\cmsis\QN9020.h)(0x57A01392)
+I (..\..\src\cmsis\core_cm0.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmInstr.h)(0x575749FB)
+I (..\..\src\cmsis\core_cmFunc.h)(0x575749FB)
+F (..\src\expandbits.c)(0x57A16036)(-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\src -I..\..\src\driver -I..\..\src\fw -I..\..\src\cmsis -I..\..\src\lib --C99-I C:\Freescale\Keil_v5\ARM\RV31\INC-I C:\Freescale\Keil_v5\ARM\CMSIS\Include-I C:\Freescale\Keil_v5\ARM\Inc\Quintic\QN9020-D__UVISION_VERSION="515"-o .\obj\expandbits.o --omf_browse .\obj\expandbits.crf --depend .\obj\expandbits.d)
+I (C:\Freescale\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)

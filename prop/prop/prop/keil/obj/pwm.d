@@ -1,0 +1,16 @@
+.\obj\pwm.o: ..\..\src\driver\pwm.c
+.\obj\pwm.o: ..\..\src\driver\pwm.h
+.\obj\pwm.o: ..\src\driver_config.h
+.\obj\pwm.o: C:\Freescale\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\pwm.o: C:\Freescale\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\pwm.o: C:\Freescale\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\pwm.o: ..\..\src\cmsis\driver_QN9020.h
+.\obj\pwm.o: ..\..\src\cmsis\QN9020.h
+.\obj\pwm.o: ..\..\src\cmsis\core_cm0.h
+.\obj\pwm.o: ..\..\src\cmsis\core_cmInstr.h
+.\obj\pwm.o: ..\..\src\cmsis\core_cmFunc.h
+.\obj\pwm.o: ..\src\driver_config.h
+.\obj\pwm.o: ..\..\src\driver\timer.h
+.\obj\pwm.o: ..\..\src\driver\sleep.h
+.\obj\pwm.o: ..\..\src\driver\syscon.h
+.\obj\pwm.o: ..\..\src\driver\gpio.h
