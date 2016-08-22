@@ -1,0 +1,85 @@
+
+/**
+ ****************************************************************************************
+ *
+ * @file qn9020_flash.mac
+ *
+ * @brief Application Debug Configuration File
+ *
+ * Copyright(C) 2015 NXP Semiconductors N.V.
+ * All rights reserved.
+ *
+ * $Rev: 1.0 $
+ *
+ ****************************************************************************************
+ */
+
+__setup ()
+{
+    // remap memory.
+    //__writeMemory32(0xC0000000, 0x40000080, "Memory");  
+    //__hwReset(0);
+}
+
+cfg_fw_v17()
+{
+    PC  = 0x01000350;
+    MSP = 0x1000c3d0;
+}
+
+cfg_fw_9020_B0()
+{
+    PC  = 0x01015870;
+    MSP = 0x1000CD00;
+}
+
+cfg_fw_9020_B1()
+{
+    PC  = 0x01015B10;
+    MSP = 0x1000CD00;
+}
+
+cfg_fw_9020_B2()
+{
+    PC  = 0x01015B10;
+    MSP = 0x1000CD00;
+}
+
+
+cfg_fw_v_default()
+{
+    // do nothing
+}
+
+execUserReset()
+{
+    __var chip_id;
+
+    chip_id = __readMemory32(0x40000088, "Memory");
+
+    if(chip_id == 0x2801) // QN9020 B0
+    {
+        __message "Device: QN9020 B0";
+        cfg_fw_9020_B0();
+    }
+    else if(chip_id == 0x2901) // QN9020 B1
+    {
+        __message "Device: QN9020 B1";
+        cfg_fw_9020_B1();
+    }
+    else if(chip_id == 0x2A01) // QN9020 B2
+    {
+        __message "Device: QN9020 B2";
+        cfg_fw_9020_B2();
+    }
+    else if(chip_id == 0x2B01) // QN9020 B3
+    {
+        __message "Device: QN9020 B3";
+        cfg_fw_9020_B2();
+    }
+    else
+    {
+        __message "Error: unknown device ID: ", chip_id;
+    }
+}
+

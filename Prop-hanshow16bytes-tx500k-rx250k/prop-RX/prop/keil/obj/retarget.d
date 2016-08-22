@@ -1,0 +1,15 @@
+.\obj\retarget.o: ..\..\src\retarget\retarget.c
+.\obj\retarget.o: ..\src\driver_config.h
+.\obj\retarget.o: C:\Freescale\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\retarget.o: C:\Freescale\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\retarget.o: C:\Freescale\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\retarget.o: ..\..\src\cmsis\driver_QN9020.h
+.\obj\retarget.o: ..\..\src\cmsis\QN9020.h
+.\obj\retarget.o: ..\..\src\cmsis\core_cm0.h
+.\obj\retarget.o: ..\..\src\cmsis\core_cmInstr.h
+.\obj\retarget.o: ..\..\src\cmsis\core_cmFunc.h
+.\obj\retarget.o: ..\src\driver_config.h
+.\obj\retarget.o: C:\Freescale\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\retarget.o: C:\Freescale\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+.\obj\retarget.o: C:\Freescale\Keil_v5\ARM\ARMCC\Bin\..\include\rt_misc.h
+.\obj\retarget.o: C:\Freescale\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h

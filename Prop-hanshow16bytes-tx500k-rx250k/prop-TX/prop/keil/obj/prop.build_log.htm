@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.15
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Wenxue Wang, FSL, LIC=FQQEY-25CDJ-37W2H-U4SDG-YXSRG-4NU7E
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.15.0
+Toolchain Path:  C:\Freescale\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.15.0
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+C:\Users\b51443\Desktop\Prop-hanshow16byte\prop-TX\prop\keil\prop.uvproj
+Project File Date:  08/22/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Freescale\Keil_v5\ARM\ARMCC\Bin'
+Build target 'prop'
+compiling prop_example.c...
+..\src\prop_example.c(154): warning:  #223-D: function "prop_mode_tx2" declared implicitly
+          prop_mode_tx2(TRX_CHANNEL, AA, PROP_AA_NUM_4BYTES, (uint8_t *)send_str, PROP_PAYLOAD_LEN);            
+..\src\prop_example.c(104): warning:  #177-D: variable "j" was declared but never referenced
+       int i=0,j=0,z=0;
+..\src\prop_example.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=7440 RO-data=1212 RW-data=132 ZI-data=1000  
+After Build - User command #1: fromelf --bin --output ./bin/prop.bin ./obj/prop.axf
+".\obj\prop.axf" - 0 Error(s), 2 Warning(s).
+</pre>
+</body>
+</html>

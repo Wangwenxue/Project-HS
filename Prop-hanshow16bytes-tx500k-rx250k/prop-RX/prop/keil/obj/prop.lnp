@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+".\obj\startup.o"
+".\obj\system.o"
+".\obj\adc.o"
+".\obj\analog.o"
+".\obj\dma.o"
+".\obj\gpio.o"
+".\obj\i2c.o"
+".\obj\pwm.o"
+".\obj\rtc.o"
+".\obj\serialflash.o"
+".\obj\sleep.o"
+".\obj\spi.o"
+".\obj\syscon.o"
+".\obj\timer.o"
+".\obj\uart.o"
+".\obj\wdt.o"
+"..\..\src\lib\keil\qn902xb2_lib_lite.lib"
+".\obj\retarget.o"
+".\obj\prop_example.o"
+".\obj\proprietary.o"
+".\obj\crc.o"
+".\obj\expandbits.o"
+--library_type=microlib --strict --scatter "..\..\src\link\keil\qn9020_link.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\prop.map" -o .\obj\prop.axf

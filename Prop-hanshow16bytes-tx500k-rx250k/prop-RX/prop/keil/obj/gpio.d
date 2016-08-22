@@ -1,0 +1,14 @@
+.\obj\gpio.o: ..\..\src\driver\gpio.c
+.\obj\gpio.o: ..\..\src\driver\gpio.h
+.\obj\gpio.o: ..\src\driver_config.h
+.\obj\gpio.o: C:\Freescale\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\gpio.o: C:\Freescale\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\gpio.o: C:\Freescale\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\gpio.o: ..\..\src\cmsis\driver_QN9020.h
+.\obj\gpio.o: ..\..\src\cmsis\QN9020.h
+.\obj\gpio.o: ..\..\src\cmsis\core_cm0.h
+.\obj\gpio.o: ..\..\src\cmsis\core_cmInstr.h
+.\obj\gpio.o: ..\..\src\cmsis\core_cmFunc.h
+.\obj\gpio.o: ..\src\driver_config.h
+.\obj\gpio.o: ..\..\src\driver\sleep.h
+.\obj\gpio.o: ..\..\src\driver\syscon.h
