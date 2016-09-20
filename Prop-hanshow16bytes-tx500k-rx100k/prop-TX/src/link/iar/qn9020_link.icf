@@ -1,0 +1,35 @@
+
+// define
+define symbol RAM_BEGIN  = 0x10000000;
+define symbol RAM_SIZE   = 0xCDB0;
+define symbol STACK_SIZE = 0x200;
+define symbol HEAP_SIZE  = 0x0;
+
+// config
+do not initialize  { section .noinit };
+
+define memory MEM with size = 4G;
+define region RAM = MEM:[from RAM_BEGIN size RAM_SIZE];
+
+define block CSTACK    with alignment = 8, size = STACK_SIZE { };
+define block HEAP      with alignment = 8, size = HEAP_SIZE  { };
+
+define block BLK0 with fixed order
+{
+    readonly section .intvec,
+    readonly section .RESET,
+    readonly,
+    readwrite
+};
+
+define block BLK1
+{
+    readwrite section .bss,
+    block CSTACK,
+    block HEAP
+};
+
+place at start of RAM {block BLK0};
+
+place in RAM {block BLK1};
+
